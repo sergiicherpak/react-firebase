@@ -1,0 +1,30 @@
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  color: $black;
+  @include flex(center, center);
+  .login-form {
+    width: 400px;
+    .input-item-wrapper {
+      width: 100%;
+      margin-bottom: 20px;
+      @include flex;
+      label {
+        font-weight: bold;
+      }
+    }
+    .error {
+      color: $color-red;
+    }
+    .input-submit-wrapper {
+      margin-top: 50px;
+      @include flex(flex-end, center);
+      .submit {
+        border: none;
+        background-color: $primary;
+        padding: 10px 30px;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: $white;
+  color: $black-inactive;
+  font-family: "Gotham", sans-serif;
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+a,
+button,
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+scroll {
+  width: 100vw;
+  height: 100vh;
+}
+
+input {
+  border: 1px solid $grey-300;
+  border-radius: 5px;
+  color: $grey-900;
+  font-size: 16px;
+  padding: 5px;
+}
+
+main {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 40px;
+}
+
+.btn--primary {
+  background-color: $primary;
+  color: $white-inactive;
+  border-radius: 10px;
+}
+

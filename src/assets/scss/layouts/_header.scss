@@ -1,0 +1,40 @@
+.header {
+  padding: 40px 0 17px 0;
+  border-bottom: 1px solid $color-border;
+  @include flex;
+  .avatar-wrapper {
+    width: 5%;
+    .avatar {
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .avatar-info {
+    width: 15%;
+    .avatar-name {
+      margin: 0 0 5px 0;
+    }
+    .avatar-role {
+      @include flex(flex-start, center);
+    }
+  }
+  .page-title {
+    width: 65%;
+    @include flex(center, center);
+    .title {
+      font-size: 28px;
+      color: $grey-900;
+      font-weight: bold;
+    }
+  }
+  .btn-logout {
+    width: 15%;
+    padding: 13px 50px;
+    font-size: 23px;
+  }
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+}
